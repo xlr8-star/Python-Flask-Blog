@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 05, 2018 at 12:06 PM
+-- Generation Time: Jun 16, 2021 at 06:00 AM
 -- Server version: 10.1.34-MariaDB
--- PHP Version: 7.1.19
+-- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `codingthunder`
+-- Database: `harsh sahu`
 --
 
 -- --------------------------------------------------------
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `contacts` (
-  `sno` int(11) NOT NULL,
+  `sno` int(50) NOT NULL,
   `name` text NOT NULL,
   `phone_num` varchar(50) NOT NULL,
   `msg` text NOT NULL,
@@ -42,13 +42,8 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`sno`, `name`, `phone_num`, `msg`, `date`, `email`) VALUES
-(1, 'first post', '123456789', 'first post', '2018-07-29 11:36:23', 'firstpost@gmail.com'),
-(2, 'mera naam', '4434343434', 'Bhai please send ho jaa database mei', NULL, 'meraemail@gmail.com'),
-(3, 'mera naam', '4434343434', 'Bhai please send ho jaa database mei', '2018-07-29 11:44:51', 'meraemail@gmail.com'),
-(4, 'Bithika Pal', 'dfdf', 'posting now', '2018-07-29 15:46:28', 'bithikapddal@iitkgp.ac.in'),
-(5, 'dfdf', 'dsffdfs', 'sd mail send please', '2018-07-29 17:19:41', 'dfdf@df.dfd'),
-(6, 'dfdf', 'dsffdfs', 'sd mail send please', '2018-07-29 17:21:58', 'dfdf@df.dfd'),
-(7, 'dfdf', 'dsffdfs', 'sd mail send please', '2018-07-29 17:22:33', 'dfdf@df.dfd');
+(1, 'First Post', '123456789', 'First Post', '2021-06-08 14:35:36', 'firstpost@gmail.com'),
+(4, 'Harsh Sahu', '7728041845', 'Hello WOrld', '2021-06-11 10:47:47', 'adgadgdahad@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -71,12 +66,13 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`sno`, `title`, `tagline`, `slug`, `content`, `img_file`, `date`) VALUES
-(1, 'Lets learn about stock market', 'post.tagline', 'first-post', 'The stock (also capital or harry stock) of a corporation is constituted of the equity stock of its owners. A single share of the stock represents fractional ownership of the corporation in proportion to the total number of shares. In liquidation, the stock represents the residual assets of the company that would be due to stockholders after discharge of all senior claims such as secured and unsecured debt.[1] Stockholders\' equity cannot be withdrawn from the company in a way that is intended to be detrimental to the company\'s creditors', 'home-bg.jpg', '2018-08-05 13:06:07'),
-(2, 'This is second post', 'coolest post ever', 'second-post', 'A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the template. The template syntax is heavily inspired by Django and Python.\r\n\r\nBelow is a minimal template that illustrates a few basics using the default Jinja configuration. We will cover the details later in this document:', 'about-bg.jpg', '2018-08-01 21:04:07'),
-(4, 'Variables4', 'fourth tagline', 'fourth-post', 'Beside filters, there are also so-called “tests” available. Tests can be used to test a variable against a common expression. To test a variable or expression, you add is plus the name of the test after the variable. For example, to find out if a variable is defined, you can do name is defined, which will then return true or false depending on whether name is defined in the current template context.\r\n\r\nTests can accept arguments, too. If the test only takes one argument, you can leave out the parentheses. For example, the following two expressions do the same thing:\r\n\r\n{% if loop.index is divisibleby 3 %}\r\n{% if loop.index is divisibleby(3) %}\r\nThe List of Builtin Tests below describes all the builtin tests.', '', '2018-08-01 21:08:58'),
-(5, 'Whitespace Control', 'tagline', 'slug-next', 'In the default configuration:\r\n\r\na single trailing newline is stripped if present\r\nother whitespace (spaces, tabs, newlines etc.) is returned unchanged\r\nIf an application configures Jinja to trim_blocks, the first newline after a template tag is removed automatically (like in PHP). The lstrip_blocks option can also be set to strip tabs and spaces from the beginning of a line to the start of a block. (Nothing will be stripped if there are other characters before the start of the block.)\r\n\r\nWith both trim_blocks and lstrip_blocks enabled, you can put block tags on their own lines, and the entire block line will be removed when rendered, preserving the whitespace of the contents. For example, without the trim_blocks and lstrip_blocks options, this template:', '', '2018-08-01 21:09:50'),
-(7, 'List Comprehension, Dictionary Comprehension And Generator Comprehension | Advanced Python in Hindi', 'this is new post tagline', 'new-post', 'sfsf', 'sdf', '2018-08-04 17:20:16'),
-(8, 'List Comprehension, Dictionary Comprehension And Generator Comprehension | Advanced Python in Hindi', 'dsfdfs', 'ddddddddd', 'sdfdsfd', 'fd', '2018-08-04 17:22:28');
+(1, 'Lets Learn About Computer ', 'This is First Post', 'first-post', 'A computer is a machine that can be programmed to carry out sequences of arithmetic or logical operations automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks. A computer system is a \"complete\" computer that includes the hardware, operating system (main software), and peripheral equipment needed and used for \"full\" operation. This term may also refer to a group of computers that are linked and function together, such as a computer network or computer cluster.', 'home-bg.jpg', '2021-06-15 09:55:33'),
+(2, 'What Is Gaming?', 'This is Second Post', 'second-post', ' A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. Video games are often augmented with audio feedback delivered through speakers or headphones, and sometimes with other types of feedback, including haptic technology.\r\n\r\nVideo games are defined based on their platform, which include arcade games, console games, and personal computer (PC) games. More recently, the industry has expanded onto mobile gaming through smartphones and tablet computers, virtual and augmented reality systems, and remote cloud gaming. Video games are classified into a wide range of genres based on their type of gameplay and purpose.', 'about-bg.jpg', '2021-06-11 09:54:49'),
+(3, 'Education In India\r\n\r\n', 'It Is Third Post', 'third-post', 'Education in India is primarily managed by state-run public education system, which fall under the command of the government at three levels: federal, state and local. Under various articles of the Indian Constitution and the Right of Children to Free and Compulsory Education Act, 2009, free and compulsory education is provided as a fundamental right to children aged 6 to 14. The approximate ratio of public schools to private schools in India is 7:5. Major policy initiatives in Indian education are numerous. Up until 1976, education policies and implementation were determined legally by each of India’s constitutional states. The 42nd amendment to the constitution in 1976 made education a ‘concurrent subject’. From this point on the central and state governments shared formal responsibility for funding and administration of education. In a country as large as India, now with 28 states and eight union territories, this means that the potential for variations between states in the policies, plans, programs and initiatives for elementary education is vast. Periodically, national policy frameworks are created to guide states in their creation of state-level programs and policies. State governments and local government bodies manage the majority of primary and upper primary schools and the number of government-managed elementary schools is growing.', 'post-bg.jpg', '2021-06-11 10:08:46'),
+(4, 'Iron Man', 'It Is Fourth Post', 'fourth-post', 'Iron Man is a superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover dated March 1963), and received his own title in Iron Man #1 (May 1968). Also in 1963, the character founded the Avengers alongside Thor, Ant-Man, Wasp and the Hulk.\r\n\r\nA wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony Edward \"Tony\" Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron Man.\r\n\r\nInitially, Iron Man was a vehicle for Stan Lee to explore Cold War themes, particularly the role of American technology and industry in the fight against communism. Subsequent re-imaginings of Iron Man have transitioned from Cold War motifs to contemporary matters of the time.[1]', 'home-bg.jpg', '2021-06-11 10:08:46'),
+(5, 'What Is Coding?', 'It Is Fifth Post', 'fifth-post', 'Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms\' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding).[1][2] The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing unit. The purpose of programming is to find a sequence of instructions that will automate the performance of a task (which can be as complex as an operating system) on a computer, often for solving a given problem. Proficient programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.\r\n\r\n', 'about-bg.jpg', '2021-06-11 10:13:30'),
+(6, 'BLOG', 'this is sixth blog', 'sixth-blog', 'This Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a Blog\r\nThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a BlogThis Is a Blog', '', '2021-06-15 10:18:14'),
+(8, 'Books,Movies And Music', 'information', 'yuo-post', 'Examples of what to put in this section\r\n	· Recommendations you\'ve received from friends\r\n	· Links to books and music you\'d like to purchase online\r\n	· Links to online reviews\r\n	· Book reviews and book club questions\r\n	· Information about performers and authors you like\r\n	· Photos, images of album covers\r\n	· Links to online discussion groups\r\n  \r\nTips\r\n	· Do you have a Windows Mobile device? Use OneNote Mobile to take photos of book covers or movie posters and then sync your mobile device with this OneNote 2007 notebook to see your photos in OneNote. \r\n	· Copy information from a Web site into OneNote 2007 as text. If you use Windows Internet Explorer, look for the OneNote button in the toolbar. Select the information you want to copy and click this button to send the information to OneNote 2007 in the Unfiled Notes section.\r\n	· When you copy information from a Web browser and paste onto a page, a reference link is inserted on the page so you can always return to your source.\r\n	· You can capture an article on the Web and insert it into Microsoft Office OneNote 2007 as a searchable image.  To do this, on the Insert menu, click Screen Clipping or press Windows Logo Key + S. \r\n', 'Desert.jpg', '1980-01-01 00:21:20');
 
 --
 -- Indexes for dumped tables
@@ -102,7 +98,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `sno` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `posts`
